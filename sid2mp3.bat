@@ -21,7 +21,7 @@ for /f "tokens=*" %%A in (sidlist.txt) do (
 	cls
 	echo %info%
 	echo %line%
-	echo Please wait while converting sid to wav 
+	echo Please wait while converting from sid to wav 
 	echo Converting : %%~nA.sid
 	echo %line%
 	SID2WAV.EXE -t%sid_total_time% %%~dpnxA %%~dpnA.wav > sid2wav.log
